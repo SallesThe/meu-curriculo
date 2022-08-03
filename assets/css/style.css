@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #4fea8a;
+}
+
+/* HEADER */
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-color: #292b2c;
+    background-image: url('minha-foto.jpeg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem 4rem;
+    border: 1px solid;
+    min-width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: #4fea8a;
+    color: #292b2c;
+}
+
+/* MENU HAMBÚRGUER */
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ;
+}
