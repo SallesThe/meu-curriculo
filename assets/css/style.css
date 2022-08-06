@@ -5,10 +5,14 @@ body {
     padding: 0px;
     font-family: 'Poppins', sans-serif;
     color: #4fea8a;
-    background-color: #363636;
+    background-color: #292b2c;
 }
 
-/* HEADER */
+hr {
+    background-color: #00ff62;
+    padding: 0px;
+    margin: 0;
+}
 
 header {
     height: 100vh;
@@ -37,6 +41,9 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+
+
+/* HEADER */
 
 .social-media {
     margin-top: 1rem;
@@ -191,4 +198,150 @@ h2 {
 #toggle:checked ~ .menu-items {
     visibility: visible;
     opacity: 1;
+}
+
+.master {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 3rem 0;
+}
+
+/* SOBRE */
+
+.about h2 {
+    display: flex;
+    justify-content: center;
+    color: #4fea8a;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.about .sub-title {
+    display: flex;
+    justify-content: center;
+    color: #4fea8a;
+    font-size: 23px;
+}
+
+.about .description {
+    display: flex;
+    justify-content: center;
+    color: #4fea8a;
+    padding-top: 10px 0;
+    font-size: 18px;
+}
+
+.list-about  {
+    list-style: none;
+    display: list-item;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #4fea8a;
+}
+
+.list-about li {
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.list-about li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* CARD - Projetos */
+
+.projects h1 {
+    display: flex;
+    justify-content: center;
+    color: #4fea8a;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4fea8a;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0.5);
+    color: #363636;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card-text {
+    width: 40%;
+    letter-spacing: 1px;
+    color: #4fea8a;
+}
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid #292b2c;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper p {
+    font-size: 0;
+    visibility: visible;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    filter: unset;
+    
+}
+
+.card:hover > .card-wrapper::before {
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
 }
